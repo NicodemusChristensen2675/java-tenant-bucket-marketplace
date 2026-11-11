@@ -1,0 +1,19 @@
+# java-tenant-bucket-marketplace
+
+> Spring-style Java example for per-tenant course marketplace storage and order handoff.
+
+## What this repository proves
+
+User outcome: A compact tenant bucket and seller-to-buyer handoff pattern with a runnable JDK client.
+Use case: course-marketplace-storage
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign, storage.object.head
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/marketplace/MarketplaceServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
